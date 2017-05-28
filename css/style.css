@@ -98,3 +98,39 @@ main {
 .users-list2 .user-info {
     margin-left: 60px;
 }
+
+.table-of-contents-level-2 {
+    padding-left: 20px !important;
+}
+
+.table-of-contents-level-3 {
+    padding-left: 40px !important;
+}
+
+.table-of-contents-level-4 {
+    padding-left: 60px !important;
+}
+
+h1 {
+    font-size: 2.6rem;
+}
+
+h2 {
+    font-size: 2.28rem;
+}
+
+h3 {
+    font-size: 1.96rem;
+}
+
+h4 {
+    font-size: 1.65rem;
+}
+
+h5 {
+    font-size: 1.32rem;
+}
+
+h6 {
+    font-size: 1rem;
+}
