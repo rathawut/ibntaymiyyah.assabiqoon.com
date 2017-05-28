@@ -56,3 +56,45 @@ body {
 main {
     flex: 1 0 auto;
 }
+
+.users-list, .users-list2 {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.users-list > li {
+    width: 50%;
+    float: left;
+    padding: 10px;
+    text-align: center;
+}
+
+.users-list > li img {
+    border-radius: 50%;
+    max-width: 100%;
+    height: auto;
+}
+
+.users-list-name {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display: block;
+}
+
+.users-list2 > li {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-radius: 0;
+    padding: 10px 0;
+    height: 65px;
+}
+
+.users-list2 .user-img {
+    float: left;
+}
+
+.users-list2 .user-info {
+    margin-left: 60px;
+}
