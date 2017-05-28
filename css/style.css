@@ -1,7 +1,9 @@
+/* Font */
 html {
     font-family: Roboto, Kanit, Helvetica Neue, sans-serif;
 }
 
+/* Side Nav User View */
 .side-nav .userView {
     height: 100%;
 }
@@ -14,14 +16,7 @@ html {
     margin-bottom: 16px;
 }
 
-.icon-block {
-    padding: 0 15px;
-}
-
-.icon-block .material-icons {
-    font-size: inherit;
-}
-
+/* Keep Padding for Fixed Side Bar */
 header, main, footer {
     padding-left: 300px;
 }
@@ -32,6 +27,7 @@ header, main, footer {
     }
 }
 
+/* Container Width */
 .container {
     margin: 0 auto;
     max-width: 1280px;
@@ -48,4 +44,15 @@ header, main, footer {
     .container {
         width: 85%;
     }
+}
+
+/* Sticker Footer */
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
 }
