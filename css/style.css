@@ -109,15 +109,15 @@ main {
 }
 
 .table-of-contents-level-2 {
-    padding-left: 20px !important;
+    padding-left: 10px !important;
 }
 
 .table-of-contents-level-3 {
-    padding-left: 40px !important;
+    padding-left: 20px !important;
 }
 
 .table-of-contents-level-4 {
-    padding-left: 60px !important;
+    padding-left: 30px !important;
 }
 
 h1 {
