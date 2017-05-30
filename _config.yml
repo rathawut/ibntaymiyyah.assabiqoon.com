@@ -69,4 +69,4 @@ theme: materialize
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: git@github.com:Rathawut-l/arabic.assabiqoon.com.git
+  repo: git@github.com:Rathawut-l/ibntaymiyyah.assabiqoon.com.git
