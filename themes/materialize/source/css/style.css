@@ -1,0 +1,145 @@
+/* Font */
+html {
+    font-family: Roboto, Kanit, Helvetica Neue, sans-serif;
+}
+
+/* Side Nav User View */
+.side-nav .userView {
+    height: 100%;
+}
+
+.side-nav .userView .background img {
+    width: 300px;
+}
+
+.side-nav .userView .name {
+    margin-bottom: 16px;
+}
+
+/* Keep Padding for Fixed Side Bar */
+header, main, footer {
+    padding-left: 300px;
+}
+
+@media only screen and (max-width: 992px) {
+    header, main, footer {
+        padding-left: 0
+    }
+}
+
+/* Container Width */
+.container {
+    margin: 0 auto;
+    max-width: 1280px;
+    width: 90%
+}
+
+@media only screen and (min-width: 601px) {
+    .container {
+        width: 85%
+    }
+}
+
+@media only screen and (min-width: 993px) {
+    .container {
+        width: 85%;
+    }
+}
+
+/* Sticker Footer */
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+.users-list, .users-list2 {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.users-list > li {
+    width: 50%;
+    float: left;
+    padding: 10px;
+    text-align: center;
+}
+
+.users-list > li img {
+    border-radius: 50%;
+    max-width: 100%;
+    height: auto;
+}
+
+.users-list-name {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display: block;
+}
+
+.users-list2 > li {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-radius: 0;
+    padding: 10px 0;
+    height: 65px;
+}
+
+.users-list2 .user-img {
+    float: left;
+}
+
+.users-list2 .user-img img {
+    height: 50px;
+    width: 50px;
+}
+
+.users-list2 .user-info {
+    margin-left: 60px;
+}
+
+.table-of-contents {
+    background-color: rgba(255, 255, 255, 0.75);
+}
+
+.table-of-contents-level-2 {
+    padding-left: 10px !important;
+}
+
+.table-of-contents-level-3 {
+    padding-left: 20px !important;
+}
+
+.table-of-contents-level-4 {
+    padding-left: 30px !important;
+}
+
+h1 {
+    font-size: 2.6rem;
+}
+
+h2 {
+    font-size: 2.28rem;
+}
+
+h3 {
+    font-size: 1.96rem;
+}
+
+h4 {
+    font-size: 1.65rem;
+}
+
+h5 {
+    font-size: 1.32rem;
+}
+
+h6 {
+    font-size: 1rem;
+}

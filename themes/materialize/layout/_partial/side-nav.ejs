@@ -1,0 +1,39 @@
+<ul id="side-nav" class="side-nav fixed" style="width: 300px; transform: translateX(0px);">
+    <li>
+        <div class="userView">
+            <div class="background">
+                <img src="<%= theme.facebook.coverImg %>">
+            </div>
+            <a href="https://www.facebook.com/<%= theme.facebook.id %>">
+                <img class="circle" src="https://graph.facebook.com/<%= theme.facebook.id %>/picture?type=square">
+            </a>
+            <a href="https://www.facebook.com/<%= theme.facebook.id %>">
+                <span class="white-text name"><%= theme.facebook.name %></span>
+            </a>
+        </div>
+    </li>
+    <li class="no-padding">
+        <ul class="collapsible collapsible-accordion">
+            <% _.forEach(theme.menu, function (value, menuName) { %>
+            <li class="bold">
+                <% if (_.isObject(value)) { %>
+                <a class="collapsible-header waves-effect waves-teal"><%= menuName %> <span class="badge"><%= _.size(value) %> หัวข้อ</span></a>
+                <div class="collapsible-body">
+                    <ul>
+                        <% _.forEach(value, function (url, topicName) { %>
+                        <li><a href="<%= url %>"><%= topicName %></a></li>
+                        <% }) %>
+                    </ul>
+                </div>
+                <% } else { %>
+                <a class="collapsible-header waves-effect waves-teal" href="<%= value %>"><%= menuName %></a>
+                <% } %>
+            </li>
+            <% }) %>
+        </ul>
+    </li>
+    <li>
+        <div class="divider"></div>
+    </li>
+</ul>
+<a href="#" data-activates="side-nav" class="button-collapse"><i class="material-icons">menu</i></a>
